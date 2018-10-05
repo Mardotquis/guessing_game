@@ -1,0 +1,122 @@
+*{
+  border-radius: 50px;
+}
+
+html, body{
+
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+}
+.App {
+  text-align: center;
+  font-size: 1.15em;
+  display: flex;
+  flex-direction: column;
+  color: #28666E;
+  justify-content: space-between;
+
+
+}
+.App__header{
+  width: 100%;
+  font-size: 2.5em;
+}
+h2{
+  font-size: 3em;
+  margin: 0;
+}
+.App__list__items{
+  list-style-type: none;
+  line-height: 2;
+
+}
+.App__list__items li{
+  margin-bottom: 5px;
+}
+.App--bold{
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.standard__high, .expert__high{
+  display: block;
+  width: 200px;
+
+  background: #28666E;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+
+
+  border-radius: 25px;
+}
+
+.standard__high{
+   top: 45%;
+  left: 5%;
+}
+.expert__high{
+  top: 45%;
+  right: 5%;
+}
+
+.attempts__counter{
+  display: block;
+  width: 500px;
+  /* text-align: center; */
+  margin: auto;
+  /* height: 300px; */
+  background: #28666E;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+.game__guess{
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  /* height: 300px; */
+  background: #28666E;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 15px;
+
+
+}
+
+
+
+
+/* WINNING STARTS */
+
+.rollingBottom {
+  z-index: -1;
+  background-image: url('./assets/winnerscookie.svg');
+  background-repeat: no-repeat;
+  background-size: 100px;
+  display: block;
+  width: 200px;
+  height: 200px;
+  animation: spin 3000ms linear infinite, moveLeftToRight 10s linear infinite;
+  transition: all 1s ease;
+  position: absolute;
+  left: 0;
+  top: 300px;
+}
+
+
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes moveLeftToRight {
+  0%   { left: -1000px; }
+  100% { left: 100%; }
+}
+
+

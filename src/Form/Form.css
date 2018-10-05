@@ -1,0 +1,34 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form__box{
+    width: 500px;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+    /* background-color: #D0EFE6; */
+    margin-bottom: 15px;
+}
+.form__submit{
+    width: 500px;
+    height: 50px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    /* color: red; */
+
+}
+.form__box, .form__submit{
+    background-color: #28666E;
+    color: white;
+}
+.form__box, .form__submit:hover{
+    cursor: pointer;
+}

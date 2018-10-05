@@ -1,0 +1,41 @@
+
+
+  button {
+    font-size: 1.5em;
+    /* width: 30%; */
+    margin: 0 2.5%;
+    display: inline-block;
+    text-transform: uppercase;
+    /* color: red; */
+    background-color: #28666E;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  button:active, button:focus{
+    background-color: white;
+    color: #28666E;
+  }
+
+  button:nth-of-type(3){
+    width: 500px;
+    /* color: red; */
+  }
+  button:hover{
+    cursor: pointer;
+}
+.test{
+    color: red;
+  }
+
+  .active  {
+    background-color: red;
+    color: green
+  };
+
+
+
+  button:disabled{
+      color: red;
+      background-color: blue;
+  }
